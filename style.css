@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: #eee;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #00acee;
+    margin-bottom: 40px;
+}
+
+header img {
+    width: 40px;
+}
+
+header h1{
+    color: #fff;
+    font-size: 28px;
+}
+
+.post {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto 80px;
+}
+
+.input-group label{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.input-group label img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.input-group textarea {
+    resize: none;
+    height: 80px;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+}
+
+.input-group{
+    margin-bottom: 15px;
+}
+
+.post button{
+    background-color: #00acee;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+
+.post button img{
+    width: 20px;
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.feed h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.feed select {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 40px;
+}
+
+.feed p {
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.carrossel {
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 400px;
+    width: 400px;
+    position: relative;
+}
+
+.carrosel-container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.carrosel-container img{
+    object-fit: cover;
+    height: 400px;
+    width: 400px;
+}
+
+.back-arrow{
+    position: absolute;
+    top: 45%;
+    left: 5px;
+    z-index: 1;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.next-arrow{
+    position: absolute;
+    top: 45%;
+    right: 5px;
+    z-index: 1;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Rede Social</title>
+</head>
+<body>
+    <header>
+        <img src="./img/icons8-twitter-96.png" alt="Logo da rede social">
+        <h1>Mini Rede Social</h1>
+    </header>
+    <div class="container">
+        <main>
+            <section class="post">
+                <form action="">
+                    <div class="input-group">
+                        <label for="comentario">
+                            <img src="./img/icons8-pencil-24.png" alt="">
+                            Digite seu post:
+                        </label>
+                        <textarea name="comentario" id="comentario" placeholder="O que você está pensando hoje?"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="categoria">
+                            <img src="./img/icons8-list-24.png" alt="">
+                            Categoria:
+                        </label>
+                        <select name="categoria" id="categoria">
+                            <option value="todos">Todos</option>
+                            <option value="noticias">Noticias</option>
+                            <option value="dicas">Dicas</option>
+                            <option value="eventos">Eventos</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="imagem">
+                            <img src="./img/icons8-img-30.png" alt="">
+                            Insira uma imagem (URL):
+                        </label>
+                        <input type="text" name="imagem" id="imagem" placeholder="Insira a url aqui">
+                    </div>
+                    <div class="input-group">
+                        <label for="imagem">
+                            <img src="./img/icons8-img-30.png" alt="">
+                            Insira uma imagem (URL):
+                        </label>
+                        <input type="text" name="imagem" id="imagem" placeholder="Insira a url aqui">
+                    </div>
+                    <div class="input-group">
+                        <label for="imagem">
+                            <img src="./img/icons8-img-30.png" alt="">
+                            Insira uma imagem (URL):
+                        </label>
+                        <input type="text" name="imagem" id="imagem" placeholder="Insira a url aqui">
+                    </div>
+                    <button>
+                        <img src="./img/icons8-megaphone-30.png" alt="">
+                        Postar
+                    </button>
+                </form>
+            </section>
+            <section class="feed">
+                <h2>Filtrar por categoria:</h2>
+                <select name="categoriaFeed" id="categoriaFeed">
+                    <option value="todos">Todos</option>
+                    <option value="noticias">Noticias</option>
+                    <option value="dicas">Dicas</option>
+                    <option value="eventos">Eventos</option>
+                </select>
+                <div>
+                    <ul>
+                        <li>
+                            <p>Postar teste</p>
+                            <ul class="carrossel">
+                                <button class="back-arrow" id="back-arrow">
+                                    <img src="./img/back-arrow.png" alt="">
+                                </button>
+                                <button class="next-arrow" id="next-arrow">
+                                    <img src="./img/next-arrow.png" alt="">
+                                </button>
+                                <li class="carrosel-container" id="img">
+                                    <img src="./img/lasagna.png" alt="">
+                                    <img src="./img/nhoque.png" alt="">
+                                    <img src="./img/pizza.jpeg" alt="">
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
